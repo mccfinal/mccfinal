@@ -20,6 +20,14 @@ graph = {
     "Eforie": ({"Hirsova": 86}, 161),
     "Neamt": ({"Iasi": 87}, 234)
 }
+graph = {
+    "per1": ({"per2": 10, "per3": 15, "per4": 30}, 25),  
+    "per2": ({"per1": 10, "per4": 12, "per5": 35}, 20),  
+    "per3": ({"per1": 15, "per5": 20}, 30),                  
+    "per4": ({"per2": 12, "per1": 30, "per6": 17}, 15),    
+    "per5": ({"per3": 20, "per2": 35, "per6": 14}, 10),          
+    "per6": ({"per4": 17, "per5": 14}, 0)
+}
 
 def greedy_search_rec(graph, prev, dst, path, q):
     # n: (h(n))
